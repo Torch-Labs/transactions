@@ -35,4 +35,4 @@ export const PAID = "paid";
 export const CREDIT = "credit";
 
 export const STRIPE_PERCENTAGE = 0.971;
-export const STRIPE_FEE = 0.971;
+export const STRIPE_FEE = 3;
