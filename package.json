@@ -1,6 +1,6 @@
 {
   "name": "@torchlabs/transactions",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Package to calculate profit made through client sales",
   "main": "lib/index.js",
   "types": "lib",
