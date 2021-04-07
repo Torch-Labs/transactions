@@ -1,0 +1,24 @@
+{
+  "name": "@torchlabs/transactions",
+  "version": "1.0.1",
+  "description": "Package to calculate profit made through client sales",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "test": "echo \"Test\"",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torch-Labs/transactions.git"
+  },
+  "author": "Sharith Godamanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Torch-Labs/transactions/issues"
+  },
+  "homepage": "https://github.com/Torch-Labs/transactions#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
+}
