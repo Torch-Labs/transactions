@@ -42,3 +42,25 @@ export function calcTransFees(
     return handleGiveaway(plan_name, paid_status, price, count);
   return handleSale(plan_name, paid, count);
 }
+
+export function calcTransFeesWithFees(
+  plan_name: GwPlans & SellingPlans,
+  paid: string,
+  paid_status: PaidStatus,
+  price: string,
+  count: string
+) {
+  let net_total;
+  if (GW_PRICES[plan_name]) {
+    net_total = handleGiveaway(plan_name, paid_status, price, count);
+  } else {
+    net_total = handleSale(plan_name, paid, count);
+  }
+  let fees = GW_PRICES[plan_name]
+    ? 0
+    : parseFloat(paid) * (1 - STRIPE_PERCENTAGE) +
+      STRIPE_FEE +
+      getProxyFee(plan_name) * parseFloat(count);
+
+  return { net_total, fees };
+}
