@@ -23,5 +23,5 @@ export declare const OLD_GIVEAWAY = "Giveaway";
 export declare const PAID = "paid";
 export declare const CREDIT = "credit";
 export declare const STRIPE_PERCENTAGE = 0.971;
-export declare const STRIPE_FEE = 3;
+export declare const STRIPE_FEE = 0.3;
 //# sourceMappingURL=constants.d.ts.map
