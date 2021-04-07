@@ -28,7 +28,7 @@ function handleGiveaway(
 ) {
   if (plan_name === OLD_GIVEAWAY) return 0;
   if (paid_status === CREDIT) return parseFloat(price) * parseFloat(count) * -1;
-  return parseFloat(price) * parseFloat(count);
+  return 0;
 }
 
 export function calcTransFees(
