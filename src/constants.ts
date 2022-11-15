@@ -7,9 +7,9 @@ export const PROXY_FEES = {
 };
 
 export const GW_PRICES = {
-  "Basic GW": 2,
-  "Premium GW": 5,
-  "Elite GW": 11,
+  "Basic GW": 5,
+  "Premium GW": 8,
+  "Elite GW": 14,
 };
 
 export const SILVER_PLAN = "Gold Plan";

@@ -26,10 +26,8 @@ function handleGiveaway(
   price: string,
   count: string
 ) {
-  console.log(plan_name, paid_status, price, count);
   if (plan_name === OLD_GIVEAWAY) return 0;
-  const amt = !price ? GW_PRICES[plan_name].toString() : price;
-  if (paid_status === CREDIT) return parseFloat(amt) * parseFloat(count) * -1;
+  if (paid_status === CREDIT) return parseFloat(price) * -1;
   return 0;
 }
 
